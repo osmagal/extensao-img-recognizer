@@ -1,0 +1,67 @@
+body {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e5eff1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* responsivity for devices with width less than 200px */
+@media (min-width: 200px) {
+    body {
+        width: 100%;
+    }
+}
+
+
+#output {
+    width: 95%;
+    padding: 15px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    flex-direction: column;
+    text-align: justify;
+    line-height: 1.5;
+    display: none;
+}
+
+#view{
+    width: 82%;
+    margin-top: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px;
+}
+
+.input, .file, .prompt {
+    width: 82%;
+    padding: 15px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#select-pdf:hover {
+    background-color: #3f3389;
+}
+
+h1{
+    text-align: center;
+}
+
+#loading {
+    display: none;
+    width: 100px;
+}
+
+.logo {
+    width: 50px;
+    margin-top: 20px;
+}
